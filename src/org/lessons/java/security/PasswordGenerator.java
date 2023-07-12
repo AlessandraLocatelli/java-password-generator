@@ -45,6 +45,14 @@ public class PasswordGenerator {
         System.out.println("colore preferito: "+favcolor);
         System.out.println("data di nascita: "+dateOfBirth);
 
+        //creo la password
+        int sumNumbersInDateOfBirth = dayOfBirth + monthOfBirth + yearOfBirth;
+        String password = name+"-"+surname+"-"+favcolor+"-"+sumNumbersInDateOfBirth;
+
+        System.out.println("La password generata è: "+password);
+
+
+
 
     }
 
